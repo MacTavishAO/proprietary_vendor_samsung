@@ -1292,5 +1292,4 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.fm@1.0 \
     libsdm-disp-vndapis \
     libthermalclient \
-    ImsSettings \
     TimeService
