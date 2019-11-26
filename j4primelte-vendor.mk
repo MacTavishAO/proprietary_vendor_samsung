@@ -150,6 +150,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/j4primelte/proprietary/vendor/bin/vendor.samsung.security.skpm@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.samsung.security.skpm@1.0-service \
     vendor/samsung/j4primelte/proprietary/vendor/bin/vendor.samsung.security.wvkprov_server@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.samsung.security.wvkprov_server@1.0-service \
     vendor/samsung/j4primelte/proprietary/vendor/bin/vendor_cmd_tool:$(TARGET_COPY_OUT_VENDOR)/bin/vendor_cmd_tool \
+    vendor/samsung/j4primelte/proprietary/vendor/bin/wlandutservice:$(TARGET_COPY_OUT_VENDOR)/bin/wlandutservice \
     vendor/samsung/j4primelte/proprietary/vendor/bin/wvkprov:$(TARGET_COPY_OUT_VENDOR)/bin/wvkprov \
     vendor/samsung/j4primelte/proprietary/vendor/bin/xtra-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/xtra-daemon \
     vendor/samsung/j4primelte/proprietary/vendor/etc/SoundBoosterParam.txt:$(TARGET_COPY_OUT_VENDOR)/etc/SoundBoosterParam.txt \
