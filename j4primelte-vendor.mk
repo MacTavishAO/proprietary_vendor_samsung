@@ -123,6 +123,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/j4primelte/proprietary/vendor/bin/mm-qjpeg-enc-test:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qjpeg-enc-test \
     vendor/samsung/j4primelte/proprietary/vendor/bin/mm-qomx-idec-test:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qomx-idec-test \
     vendor/samsung/j4primelte/proprietary/vendor/bin/mm-qomx-ienc-test:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qomx-ienc-test \
+    vendor/samsung/j4primelte/proprietary/vendor/bin/mm-vidc-omx-test:$(TARGET_COPY_OUT_VENDOR)/bin/mm-vidc-omx-test \
     vendor/samsung/j4primelte/proprietary/vendor/bin/netmgrd:$(TARGET_COPY_OUT_VENDOR)/bin/netmgrd \
     vendor/samsung/j4primelte/proprietary/vendor/bin/pktlogconf:$(TARGET_COPY_OUT_VENDOR)/bin/pktlogconf \
     vendor/samsung/j4primelte/proprietary/vendor/bin/pm-proxy:$(TARGET_COPY_OUT_VENDOR)/bin/pm-proxy \
@@ -192,7 +193,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/j4primelte/proprietary/vendor/etc/camera/sdm450_camera_j4primelte.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sdm450_camera_j4primelte.xml \
     vendor/samsung/j4primelte/proprietary/vendor/etc/camera/sr259_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sr259_chromatix.xml \
     vendor/samsung/j4primelte/proprietary/vendor/etc/camera/sr544_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sr544_chromatix.xml \
-    vendor/samsung/j4primelte/proprietary/vendor/etc/camera/sr556_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sr556_chromatix.xml \
     vendor/samsung/j4primelte/proprietary/vendor/etc/carrier/ACG/permissions/android.hardware.telephony.cdma.xml:$(TARGET_COPY_OUT_VENDOR)/etc/carrier/ACG/permissions/android.hardware.telephony.cdma.xml \
     vendor/samsung/j4primelte/proprietary/vendor/etc/carrier/BST/permissions/android.hardware.telephony.cdma.xml:$(TARGET_COPY_OUT_VENDOR)/etc/carrier/BST/permissions/android.hardware.telephony.cdma.xml \
     vendor/samsung/j4primelte/proprietary/vendor/etc/carrier/CCT/permissions/android.hardware.telephony.cdma.xml:$(TARGET_COPY_OUT_VENDOR)/etc/carrier/CCT/permissions/android.hardware.telephony.cdma.xml \
@@ -296,6 +296,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/j4primelte/proprietary/vendor/lib/camera.device@3.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.2-impl.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/camera.device@3.3-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.3-impl.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/camera.device@3.4-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.4-impl.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/com.candycamera.android.filter.libcookiencream.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.candycamera.android.filter.libcookiencream.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/com.candycamera.android.filter.libeveryday.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.candycamera.android.filter.libeveryday.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/com.linecorp.b612.filter.libriddle.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.linecorp.b612.filter.libriddle.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/com.pinguo.camera360filter.libmemory.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.pinguo.camera360filter.libmemory.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.ant@1.0.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.bluetooth_audio@1.0.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.dpm.api@1.0.so \
@@ -311,6 +315,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/j4primelte/proprietary/vendor/lib/com.quicinc.cne.server@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.quicinc.cne.server@2.0.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/com.quicinc.cne.server@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.quicinc.cne.server@2.1.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/com.quicinc.cne.server@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.quicinc.cne.server@2.2.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/com.thundersoft.ucamera.filter.libmaple.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.thundersoft.ucamera.filter.libmaple.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/com.thundersoft.ucamera.filter.libnostalgia.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.thundersoft.ucamera.filter.libnostalgia.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/eglSubDriverAndroid.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/egl/libEGL_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libEGL_adreno.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLESv1_CM_adreno.so \
@@ -413,6 +419,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libcapiv2svacnn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2svacnn.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libcapiv2vop.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2vop.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdsprpc.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromaflash.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromaflash.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_csidtg_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_csidtg_common.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_csidtg_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_csidtg_cpp_preview.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_csidtg_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_csidtg_postproc.so \
@@ -548,50 +555,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3l6xx_zsl_video_15fps_non_gyro_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6xx_zsl_video_15fps_non_gyro_3a.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3l6xx_zsl_video_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6xx_zsl_video_3a.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3l6xx_zsl_video_non_gyro_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6xx_zsl_video_non_gyro_3a.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3p8sp_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_common.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3p8sp_hfr_120_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_hfr_120_3a.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3p8sp_hfr_120_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_hfr_120_cpp.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3p8sp_hfr_120_isp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_hfr_120_isp.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3p8sp_liveshot_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_liveshot_cpp.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3p8sp_liveshot_isp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_liveshot_isp.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3p8sp_mode_face_unlock_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_mode_face_unlock_3a.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3p8sp_mode_face_unlock_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_mode_face_unlock_cpp.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3p8sp_mode_face_unlock_isp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_mode_face_unlock_isp.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3p8sp_mode_hdr_auto_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_mode_hdr_auto_3a.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3p8sp_mode_hdr_auto_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_mode_hdr_auto_cpp.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3p8sp_mode_hdr_auto_isp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_mode_hdr_auto_isp.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3p8sp_mode_hdr_on_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_mode_hdr_on_3a.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3p8sp_mode_hdr_on_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_mode_hdr_on_cpp.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3p8sp_mode_hdr_on_isp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_mode_hdr_on_isp.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3p8sp_mode_wide_selfie_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_mode_wide_selfie_3a.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3p8sp_mode_wide_selfie_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_mode_wide_selfie_cpp.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3p8sp_mode_wide_selfie_isp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_mode_wide_selfie_isp.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3p8sp_preview_high_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_preview_high_cpp.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3p8sp_preview_high_isp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_preview_high_isp.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3p8sp_preview_low_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_preview_low_cpp.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3p8sp_preview_low_isp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_preview_low_isp.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3p8sp_snapshot_high_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_snapshot_high_cpp.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3p8sp_snapshot_high_isp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_snapshot_high_isp.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3p8sp_snapshot_high_lls_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_snapshot_high_lls_cpp.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3p8sp_snapshot_low_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_snapshot_low_cpp.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3p8sp_snapshot_low_isp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_snapshot_low_isp.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3p8sp_snapshot_remosaic_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_snapshot_remosaic_cpp.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3p8sp_snapshot_remosaic_isp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_snapshot_remosaic_isp.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3p8sp_sw_post_proc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_sw_post_proc.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3p8sp_video_high_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_video_high_cpp.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3p8sp_video_high_isp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_video_high_isp.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3p8sp_video_low_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_video_low_cpp.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3p8sp_video_low_isp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_video_low_isp.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3p8sp_vt_15fps_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_vt_15fps_3a.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3p8sp_vt_24fps_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_vt_24fps_3a.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3p8sp_vt_30fps_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_vt_30fps_3a.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3p8sp_vt_7fps_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_vt_7fps_3a.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3p8sp_vt_high_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_vt_high_cpp.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3p8sp_vt_high_isp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_vt_high_isp.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3p8sp_vt_low_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_vt_low_cpp.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3p8sp_vt_low_isp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_vt_low_isp.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3p8sp_zsl_preview_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_zsl_preview_3a.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k3p8sp_zsl_video_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_zsl_video_3a.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k4h5yc_4k_preview_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h5yc_4k_preview_3a.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k4h5yc_4k_video_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h5yc_4k_video_3a.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_s5k4h5yc_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h5yc_common.so \
@@ -847,24 +810,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_sr544_video_isp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_sr544_video_isp.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_sr544_zsl_preview_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_sr544_zsl_preview_3a.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_sr544_zsl_video_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_sr544_zsl_video_3a.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_sr556_4k_preview_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_sr556_4k_preview_3a.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_sr556_4k_video_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_sr556_4k_video_3a.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_sr556_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_sr556_common.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_sr556_hfr_120_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_sr556_hfr_120_3a.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_sr556_hfr_120_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_sr556_hfr_120_cpp.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_sr556_hfr_120_isp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_sr556_hfr_120_isp.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_sr556_liveshot_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_sr556_liveshot_cpp.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_sr556_liveshot_isp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_sr556_liveshot_isp.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_sr556_preview_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_sr556_preview_cpp.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_sr556_preview_isp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_sr556_preview_isp.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_sr556_snapshot_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_sr556_snapshot_cpp.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_sr556_snapshot_isp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_sr556_snapshot_isp.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_sr556_sw_post_proc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_sr556_sw_post_proc.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_sr556_video_4k_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_sr556_video_4k_cpp.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_sr556_video_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_sr556_video_cpp.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_sr556_video_isp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_sr556_video_isp.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_sr556_zsl_preview_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_sr556_zsl_preview_3a.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libchromatix_sr556_zsl_video_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_sr556_zsl_video_3a.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libconfigdb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libconfigdb.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libcpion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcpion.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libcppf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcppf.so \
@@ -940,6 +885,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/j4primelte/proprietary/vendor/lib/liblqe.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblqe.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdmdetect.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdsprpc.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/libmediacodecservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmediacodecservice.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/libminijail_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libminijail_vendor.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmm-color-convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-color-convertor.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmm-hdcpmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-hdcpmgr.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmm-omxcore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-omxcore.so \
@@ -962,6 +909,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera2_stats_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_stats_modules.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_atmel_at24c32e_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_atmel_at24c32e_eeprom.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_cac3_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_cac3_lib.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_chromaflash_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_chromaflash_lib.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_dbg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_dbg.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_dcrf_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_dcrf_lib.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_dummyalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_dummyalgo.so \
@@ -974,8 +922,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_facedetection_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_facedetection_lib.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_faceproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_faceproc.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_faceproc2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_faceproc2.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_gt24c128_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_gt24c128_eeprom.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_gt24c128_sub_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_gt24c128_sub_eeprom.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_gt24c64a_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_gt24c64a_eeprom.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_hdr_gb_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_hdr_gb_lib.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_imglib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imglib.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_imx258_gt24c16_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imx258_gt24c16_eeprom.so \
@@ -1018,12 +965,14 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_isp_wb40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_wb40.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_le2464c_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_le2464c_eeprom.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_le2464c_master_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_le2464c_master_eeprom.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_llvd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_llvd.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_lsi_s5k5e3yx_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_lsi_s5k5e3yx_eeprom.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_lsi_s5k5e9yx_otp_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_lsi_s5k5e9yx_otp_eeprom.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_onsemi_cat24c16_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_onsemi_cat24c16_eeprom.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_onsemi_cat24c32_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_onsemi_cat24c32_eeprom.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_onsemi_cat24c32_imx362_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_onsemi_cat24c32_imx362_eeprom.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_onsemi_cat24c64_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_onsemi_cat24c64_eeprom.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_onsemi_cat24s128_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_onsemi_cat24s128_eeprom.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_optizoom_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_optizoom_lib.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_ov4688_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov4688_eeprom.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_paaf_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_paaf_lib.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_pdaf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_pdaf.so \
@@ -1032,7 +981,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_ppeiscore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ppeiscore.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_qtech_f3l8yam_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_qtech_f3l8yam_eeprom.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_qtech_f5670bq_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_qtech_f5670bq_eeprom.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_quadracfa.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_quadracfa.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_rohm_brcg064gwz_3_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_rohm_brcg064gwz_3_eeprom.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_s5k3l6xx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_s5k3l6xx.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_s5k5e9yx_front.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_s5k5e9yx_front.so \
@@ -1041,6 +989,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_sony_imx298_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_sony_imx298_eeprom.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_sony_imx378_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_sony_imx378_eeprom.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_sonyimx135_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_sonyimx135_eeprom.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_stillmore_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_stillmore_lib.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_stm_m24c64s_fcu_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_stm_m24c64s_fcu_eeprom.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_sunny_8865_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_sunny_8865_eeprom.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_sunny_gt24c64_imx298_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_sunny_gt24c64_imx298_eeprom.so \
@@ -1052,8 +1001,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_thread_services.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_thread_services.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_tintless_algo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_tintless_algo.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_tintless_bg_pca_algo.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_trueportrait_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_trueportrait_lib.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_truly_cma481_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_truly_cma481_eeprom.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_truly_cmb433_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_truly_cmb433_eeprom.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/libmmcamera_ubifocus_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ubifocus_lib.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmmjpeg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmjpeg.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmmjpeg_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmjpeg_interface.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libmmosal_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmosal_proprietary.so \
@@ -1070,6 +1021,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/j4primelte/proprietary/vendor/lib/liboemaids_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemaids_vendor.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemcrypto.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libois_lc898122.so:$(TARGET_COPY_OUT_VENDOR)/lib/libois_lc898122.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/liboptizoom.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboptizoom.so \    
     vendor/samsung/j4primelte/proprietary/vendor/lib/libpdmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpdmapper.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libpdnotifier.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpdnotifier.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libperfgluelayer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfgluelayer.so \
@@ -1110,6 +1062,19 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/j4primelte/proprietary/vendor/lib/librs_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/librs_adreno.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/librs_adreno_sha1.so:$(TARGET_COPY_OUT_VENDOR)/lib/librs_adreno_sha1.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libril.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/libsaiv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsaiv.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/libsaiv_BeautySolution.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsaiv_BeautySolution.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/libsaiv_BeautySolutionLite.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsaiv_BeautySolutionLite.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/libsaiv_FacePreProcessing.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsaiv_FacePreProcessing.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/libsaiv_HprFace_FD_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsaiv_HprFace_FD_api.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/libsaiv_HprFace_FD_jni.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsaiv_HprFace_FD_jni.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/libsaiv_HprFace_GAE_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsaiv_HprFace_GAE_api.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/libsaiv_HprFace_GAE_jni.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsaiv_HprFace_GAE_jni.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/libsaiv_HprFace_LD_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsaiv_HprFace_LD_api.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/libsaiv_HprFace_LD_jni.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsaiv_HprFace_LD_jni.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/libsaiv_HprFace_utils_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsaiv_HprFace_utils_api.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/libsaiv_HprFace_utils_jni.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsaiv_HprFace_utils_jni.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/libsaiv_vision.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsaiv_vision.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libsamsungVoipResampler.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsamsungVoipResampler.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libscalar.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscalar.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libsdedrm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdedrm.so \
@@ -1122,12 +1087,18 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libsec-ril-dsds.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsec-ril-dsds.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libsec-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsec-ril.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libsecaudioinfo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecaudioinfo.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/libsechelper_engine.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsechelper_engine.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/libsecimaging.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecimaging.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/libsecjpeginterface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecjpeginterface.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/libsecjpegquram.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecjpegquram.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libsecnativefeature.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecnativefeature.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/libsecpkcs11_engine.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecpkcs11_engine.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libsecure_storage.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecure_storage.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libsecureui.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecureui.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libsecureui_svcsock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecureui_svcsock.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libsensorlistener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorlistener.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libsensorndkbridge.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorndkbridge.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/libsemcamera_jni.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsemcamera_jni.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libsi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsi.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libskeymaster3device.so:$(TARGET_COPY_OUT_VENDOR)/lib/libskeymaster3device.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libsmart_cropping.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsmart_cropping.camera.samsung.so \
@@ -1150,6 +1121,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libstagefright_soft_vorbisdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_vorbisdec.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libstagefright_xmlparser.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_xmlparser.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libstagefrighthw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefrighthw.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/libstr_capture_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstr_capture_core.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/libstr_capture_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstr_capture_interface.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/libstr_preview_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstr_preview_interface.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libstreamparser.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstreamparser.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libsubsystem_control.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsubsystem_control.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libsurround_3mic_proc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsurround_3mic_proc.so \
@@ -1159,7 +1133,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libtime_genoff.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtime_genoff.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libtinycompress_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinycompress_vendor.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyxml2_1.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/libts_detected_face_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libts_detected_face_hal.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/libts_face_beautify_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libts_face_beautify_hal.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libtzdrmgenprov.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtzdrmgenprov.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/libubifocus.so:$(TARGET_COPY_OUT_VENDOR)/lib/libubifocus.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libucsengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/libucsengine.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libulp2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libulp2.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libuniplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libuniplugin.so \
@@ -1218,6 +1195,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/j4primelte/proprietary/vendor/lib/vendor.qti.gnss@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.gnss@2.1.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/vendor.qti.hardware.alarm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.alarm@1.0.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/vendor.qti.hardware.camera.device@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.camera.device@1.0.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/vendor.qti.hardware.camera.device@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.camera.device@1.0_vendor.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/vendor.qti.hardware.data.connection@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.connection@1.0.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/vendor.qti.hardware.data.dynamicdds@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.dynamicdds@1.0.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/vendor.qti.hardware.data.latency@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.latency@1.0.so \
