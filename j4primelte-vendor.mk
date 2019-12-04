@@ -1154,6 +1154,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libxml.so:$(TARGET_COPY_OUT_VENDOR)/lib/libxml.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libxtadapter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libxtadapter.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libxtwifi_ulp_adaptor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libxtwifi_ulp_adaptor.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/mactavishao.hardware.graphics.common@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/mactavishao.hardware.graphics.common@1.0.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/mactavishao.hardware.camera.device@3.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/mactavishao.hardware.camera.device@3.2.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libdrmclearkeyplugin.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libwvdrmengine.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/nfc_nci_nxp.so:$(TARGET_COPY_OUT_VENDOR)/lib/nfc_nci_nxp.so \
