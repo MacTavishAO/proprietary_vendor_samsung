@@ -119,6 +119,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/j4primelte/proprietary/vendor/bin/mcDriverDaemon:$(TARGET_COPY_OUT_VENDOR)/bin/mcDriverDaemon \
     vendor/samsung/j4primelte/proprietary/vendor/bin/mm-qcamera-app:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qcamera-app \
     vendor/samsung/j4primelte/proprietary/vendor/bin/mm-qcamera-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qcamera-daemon \
+    vendor/samsung/j4primelte/proprietary/vendor/bin/mm-qcamera-daemon-j6:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qcamera-daemon-j6 \
     vendor/samsung/j4primelte/proprietary/vendor/bin/mm-qjpeg-dec-test:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qjpeg-dec-test \
     vendor/samsung/j4primelte/proprietary/vendor/bin/mm-qjpeg-enc-test:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qjpeg-enc-test \
     vendor/samsung/j4primelte/proprietary/vendor/bin/mm-qomx-idec-test:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qomx-idec-test \
@@ -907,6 +908,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libidl.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libizat_client_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libizat_client_api.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libizat_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libizat_core.so \
+    vendor/samsung/j4primelte/proprietary/vendor/lib/libj6camera2_sensor_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libj6camera2_sensor_modules.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libjpegdhw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpegdhw.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libjpegdmahw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpegdmahw.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libjpegehw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpegehw.so \
