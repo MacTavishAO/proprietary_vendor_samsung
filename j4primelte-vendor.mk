@@ -1171,7 +1171,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssd.so \
     #vendor/samsung/j4primelte/proprietary/vendor/lib/libssl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssl.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libstagefright_bufferqueue_helper_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_bufferqueue_helper_vendor.so \
-    vendor/samsung/j4primelte/proprietary/vendor/lib/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_foundation.so \
+    #vendor/samsung/j4primelte/proprietary/vendor/lib/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_foundation.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libstagefright_omx_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_omx_utils.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libstagefright_omx_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_omx_vendor.so \
     vendor/samsung/j4primelte/proprietary/vendor/lib/libstagefright_soft_ac4dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_ac4dec.so \
