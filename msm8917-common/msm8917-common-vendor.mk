@@ -100,7 +100,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/msm8917-common/proprietary/vendor/bin/hw/android.hardware.health@2.0-service.samsung:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.health@2.0-service.samsung \
     vendor/samsung/msm8917-common/proprietary/vendor/bin/hw/android.hardware.keymaster@3.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@3.0-service \
     vendor/samsung/msm8917-common/proprietary/vendor/bin/hw/android.hardware.sensors@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.sensors@1.0-service \
-    vendor/samsung/msm8917-common/proprietary/vendor/bin/hw/rild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/rild \
     vendor/samsung/msm8917-common/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.display.color@1.0-service \
     vendor/samsung/msm8917-common/proprietary/vendor/bin/hw/vendor.qti.gnss@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.gnss@1.0-service \
     vendor/samsung/msm8917-common/proprietary/vendor/bin/hw/vendor.qti.hardware.perf@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.perf@1.0-service \
@@ -1108,7 +1107,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/msm8917-common/proprietary/vendor/lib/librpmb.so:$(TARGET_COPY_OUT_VENDOR)/lib/librpmb.so \
     vendor/samsung/msm8917-common/proprietary/vendor/lib/librs_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/librs_adreno.so \
     vendor/samsung/msm8917-common/proprietary/vendor/lib/librs_adreno_sha1.so:$(TARGET_COPY_OUT_VENDOR)/lib/librs_adreno_sha1.so \
-    vendor/samsung/msm8917-common/proprietary/vendor/lib/libril.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril.so \
     vendor/samsung/msm8917-common/proprietary/vendor/lib/libsaiv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsaiv.so \
     vendor/samsung/msm8917-common/proprietary/vendor/lib/libsaiv_BeautySolution.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsaiv_BeautySolution.so \
     vendor/samsung/msm8917-common/proprietary/vendor/lib/libsaiv_BeautySolutionLite.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsaiv_BeautySolutionLite.so \
@@ -1334,6 +1332,7 @@ PRODUCT_PACKAGES += \
     libantradio \
     libsdm-disp-apis \
     vendor.qti.hardware.fm@1.0 \
+    libril \
     libsdm-disp-vndapis \
     libthermalclient \
     TimeService
