@@ -16,7 +16,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter j4primelte j6primelte,$(TARGET_DEVICE)),)
+ifneq ($(filter j4primelte j4corelte j6primelte,$(TARGET_DEVICE)),)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libsdm-disp-apis
