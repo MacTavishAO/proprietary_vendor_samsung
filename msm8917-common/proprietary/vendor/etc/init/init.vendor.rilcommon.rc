@@ -11,10 +11,10 @@ on post-fs-data
     mkdir /data/vendor/secradio 0770 radio radio
 
 on property:ro.vendor.multisim.simslotcount=1
-    stop ril-daemon1
+    stop vendor.ril-daemon1
 
 on property:hwservicemanager.ready=false
-    restart ril-daemon
+    restart vendor.ril-daemon
 
 on property:hwservicemanager.ready=false && property:ro.vendor.multisim.simslotcount=2
-    restart ril-daemon1
+    restart vendor.ril-daemon1
