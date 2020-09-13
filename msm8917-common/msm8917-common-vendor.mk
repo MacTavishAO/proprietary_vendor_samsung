@@ -923,9 +923,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/msm8917-common/proprietary/vendor/lib/liblowi_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblowi_client.so \
     vendor/samsung/msm8917-common/proprietary/vendor/lib/liblowi_wifihal.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblowi_wifihal.so \
     vendor/samsung/msm8917-common/proprietary/vendor/lib/liblqe.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblqe.so \
+    vendor/samsung/msm8917-common/proprietary/vendor/lib/libmaccutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmaccutils.so \
     vendor/samsung/msm8917-common/proprietary/vendor/lib/libmackeymaster_portable.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmackeymaster_portable.so \
     vendor/samsung/msm8917-common/proprietary/vendor/lib/libmackeymaster_staging.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmackeymaster_staging.so \
     vendor/samsung/msm8917-common/proprietary/vendor/lib/libmacprotobuf-cpp-lite.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmacprotobuf-cpp-lite.so \
+    vendor/samsung/msm8917-common/proprietary/vendor/lib/libmacprotobuf-cpp-full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmacprotobuf-cpp-full.so \
     vendor/samsung/msm8917-common/proprietary/vendor/lib/libmacsoftkeymasterdevice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmacsoftkeymasterdevice.so \
     vendor/samsung/msm8917-common/proprietary/vendor/lib/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdmdetect.so \
     vendor/samsung/msm8917-common/proprietary/vendor/lib/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdsprpc.so \
