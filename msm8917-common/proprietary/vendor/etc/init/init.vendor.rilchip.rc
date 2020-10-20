@@ -29,12 +29,6 @@ service irsc_util_oem /vendor/bin/irsc_util "/vendor/etc/sec_config_oem"
     oneshot
 
 # Avoid running ril-daemon2/3 service on qualcomm model
-on property:init.svc.ril-daemon2=running
-    stop ril-daemon2
-
-on property:init.svc.ril-daemon3=running
-    stop ril-daemon3
-
 on property:init.svc.vendor.ril-daemon=running
     stop vendor.ril-daemon
 

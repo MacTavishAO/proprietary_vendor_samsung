@@ -28,7 +28,7 @@ as anyway perflock calls of these resources would fail. -->
         <Config MajorValue="0x1" MinorValue="0x1" Target="msm8937" Supported="yes" /> <!-- l2_pc_idle_enabled -->
         <Config MajorValue="0x1" MinorValue="0x1" Target="msm8917" Node="/sys/module/lpm_levels/perf/perf-l2-pc/idle_enabled" /> <!-- l2_pc_idle_enabled -->
         <Config MajorValue="0x1" MinorValue="0x1" Target="qm215" Node="/sys/module/lpm_levels/perf/perf-l2-pc/idle_enabled" /> <!-- l2_pc_idle_enabled -->
-        <Config MajorValue="0x1" MinorValue="0x2" Supported="yes" /> <!-- lpm_bias_hyst -->
+        <Config MajorValue="0x1" MinorValue="0x2" Supported="no" /> <!-- lpm_bias_hyst -->
         <Config MajorValue="0x1" MinorValue="0x3" Supported="no" /> <!-- lpm_ref_stddev -->
         <Config MajorValue="0x1" MinorValue="0x4" Supported="no" /> <!-- lpm_tmr_add -->
 
